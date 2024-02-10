@@ -46,3 +46,41 @@ for(donkey in shrek_quote){
 #a = the iterable, b = function that makes the object capital letter, c = means 1 - the length of the object
 #d = the vector, e = selecting the ones that have been used by the iterable
 
+#3
+#the nchar() function calculates the size of a string 
+
+wordswords <- vector()
+input <- c('buzz','cross','broads','fore','')
+for(i in 1:length(input)){
+  wordswords[i] <- paste(input[i],'word', sep = '')
+}
+print(wordswords)
+
+#4 - conditional statements
+#4.1
+nums <- c(11, 22, 33, -0.01, 25, 100000, 7.2, 0.3, -2000, 20, 17, -11, 0)
+for(i in nums){
+  if(i %% 2 == 0){
+    print(paste(i, ' is divisible by 2.', sep = ''))
+  }
+}
+#4.2
+nums <- c(11, 22, 33, -0.01, 25, 100000, 7.2, 0.3, -2000, 20, 17, -11, 0)
+for(i in nums){
+  if(i %% 2 == 0){
+    print(paste(i, ' is divisible by 2.', sep = ''))
+  }else{
+  print(paste(i,' is not divisible by 2.', sep = ''))
+  }
+}
+#5
+numbers <- c(1,1,3,5,8,13,21) #Q1
+for (i in numbers) {
+  print(sqrt(i))
+}
+print(sqrt(numbers))#does the same thing as with the for function
+
+
+
+
+
