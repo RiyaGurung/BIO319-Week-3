@@ -77,14 +77,21 @@ for(i in nums){
   print(paste(i,' is not divisible by 2 but is positive.', sep = ''))
   }
 }
-#5
+
+#5.1
 numbers <- c(1,1,3,5,8,13,21) #Q1
 for (i in numbers) {
   print(sqrt(i))
 }
 print(sqrt(numbers))#does the same thing as with the for function
 
-
+#q2
+quote <- c('yer','a','wizard','Harry')
+for (i in quote){
+  if(nchar(i) == 4 | nchar(i) == 5 | nchar(i) == 6){
+    print(i)
+  }
+}
 
 
 
