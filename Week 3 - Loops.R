@@ -90,6 +90,10 @@ quote <- c('yer','a','wizard','Harry')
 for (i in quote){
   if(nchar(i) == 4 | nchar(i) == 5 | nchar(i) == 6){
     print(i)
+  } else if (nchar(i)<4){
+    print('no')
+  } else if (nchar(i)>6){
+    print('harry potter')
   }
 }
 
