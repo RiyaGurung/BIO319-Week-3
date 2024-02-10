@@ -67,10 +67,14 @@ for(i in nums){
 #4.2
 nums <- c(11, 22, 33, -0.01, 25, 100000, 7.2, 0.3, -2000, 20, 17, -11, 0)
 for(i in nums){
-  if(i %% 2 == 0){
-    print(paste(i, ' is divisible by 2.', sep = ''))
+  if(i %% 2 == 0 & i<0){
+    print(paste(i, ' is divisible by 2 but is negative.', sep = ''))
+  }else if (i %% 2 == 0 & i>0){
+    print(paste(i,' is divisible by 2 and is positive.', sep = ''))
+  }else if (i %% 2 != 0 & i<0){
+    print(paste(i,' is not divisible by 2 and is negative.', sep = ''))
   }else{
-  print(paste(i,' is not divisible by 2.', sep = ''))
+  print(paste(i,' is not divisible by 2 but is positive.', sep = ''))
   }
 }
 #5
