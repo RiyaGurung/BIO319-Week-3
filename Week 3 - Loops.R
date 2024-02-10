@@ -88,16 +88,16 @@ print(sqrt(numbers))#does the same thing as with the for function
 #q2
 quote <- c('yer','a','wizard','Harry')
 garbled_film_quote <- vector()
-for (i in quote){
-  if(nchar(i) == 4 | nchar(i) == 5 | nchar(i) == 6){
+for (i in 1:length(quote)){
+  if(nchar(quote[i]) == 4 | nchar(quote[i]) == 5 | nchar(quote[i]) == 6){
     garbled_film_quote[i] <- quote[i]
-  } else if (nchar(i)<4){
+  } else if (nchar(quote[i])<4){
     garbled_film_quote[i] <- 'no'
   } else {
     garbled_film_quote[i] <- 'harry potter'
   }
 }
-print(garbled_film_quote)
+garbled_film_quote
 
 
 
