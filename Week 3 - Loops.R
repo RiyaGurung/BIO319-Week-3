@@ -123,7 +123,7 @@ position <- matrix(data = c('first','second','third','fourth','fifth','sixth','s
 'twenty fifth','twenty sixth'),nrow = 2)
 
 for (i in 1:13) {
-  for (p in 2:2)
+  for (p in 1:2)
     print(paste(alphabet[p,i], ' is the ',position[p,i],' letter of the alphabet.', sep =''))
   }
 
