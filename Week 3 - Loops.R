@@ -111,7 +111,7 @@ for (i in 1:length(quote)){
 }
 garbled_film_quote
 
-#6
+#6 - nested for loop with matrices
 
 alphabet <- matrix(data = c('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','T','S','U','V','W','X','Y','Z'), nrow = 2)
 
@@ -122,8 +122,8 @@ position <- matrix(data = c('first','second','third','fourth','fifth','sixth','s
 'twenty second','twenty third','twenty fourth',
 'twenty fifth','twenty sixth'),nrow = 2)
 
-for (i in 1:length(alphabet)) {
-  for(p in 1:length(position)) {
-    print(paste(alphabet[i], ' is the',position[p],' letter of the alphabet.'))
+for (i in 1:13) {
+  for (p in 2:2)
+    print(paste(alphabet[p,i], ' is the ',position[p,i],' letter of the alphabet.', sep =''))
   }
-}
+
