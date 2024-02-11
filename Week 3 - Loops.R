@@ -87,6 +87,18 @@ print(sqrt(numbers))#does the same thing as with the for function
 
 #q2
 quote <- c('yer','a','wizard','Harry')
+for (i in quote) {
+  if(nchar(i) == 4 | nchar(i) == 5 | nchar(i) == 6){
+    print(i)
+  } else if(nchar(i) < 4){
+    print('no')
+  } else {
+    print('harry potter')
+  }
+}
+
+#q3 - making the output into a vector called garbled_film_quote
+quote <- c('yer','a','wizard','Harry')
 garbled_film_quote <- vector()
 for (i in 1:length(quote)){
   if(nchar(quote[i]) == 4 | nchar(quote[i]) == 5 | nchar(quote[i]) == 6){
@@ -99,6 +111,19 @@ for (i in 1:length(quote)){
 }
 garbled_film_quote
 
+#6
 
+alphabet <- matrix(data = c('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','T','S','U','V','W','X','Y','Z'), nrow = 2)
 
+position <- matrix(data = c('first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth',
+'thirteenth','fourteenth','fifteenth',
+'sixteenth','seventeenth','eighteenth',
+'nineteenth','twentieth','twenty first',
+'twenty second','twenty third','twenty fourth',
+'twenty fifth','twenty sixth'),nrow = 2)
 
+for (i in 1:length(alphabet)) {
+  for(p in 1:length(position)) {
+    print(paste(alphabet[i], ' is the',position[p],' letter of the alphabet.'))
+  }
+}
